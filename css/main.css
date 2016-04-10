@@ -71,16 +71,16 @@ ul {
   width: 100%;
 }
 
-.img-flex {
-  display: block;
-  width: 100%;
-}
-
 .banner {
   position: relative;
   overflow: hidden;
   width: 100%;
-  max-height: 500px;
+  max-height: 610px;
+}
+
+.banner .img-flex {
+  display: block;
+  width: 100%;
 }
 
 .content {
@@ -95,8 +95,13 @@ ul {
   margin: auto;
 }
 
-h2, p {
+.banner h2, p {
   text-align: center;
+}
+
+.link-card .img-flex {
+  display: block;
+  width: 100%;
 }
 
 .link-card {
@@ -105,6 +110,10 @@ h2, p {
   width: 100%;
 }
 
+.link-card h2 {
+  text-align: center;
+}
+
 .content {
   position: absolute;
   width: 100%;
@@ -117,8 +126,133 @@ h2, p {
   margin: auto;
 }
 
-.menu-item {
+.menu-icon {
   display: block;
   margin: auto;
   max-width: 12em;
+}
+
+.menu-item {
+
+}
+
+.map {
+  width:100%;
+}
+
+.menu h3 {
+  text-align: center;
+}
+
+.meal {
+  display: block;
+  margin: auto;
+  max-width: 12em;
+}
+
+footer {
+  height: 105px;
+  background-color: #333;
+}
+
+small {
+  color: #f2f2f2
+}
+
+@media only screen and (min-width: 25em) {
+
+
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  .link-card:nth-child(2) {
+    width: 50%;
+    float: left;
+  }
+
+  .link-card:nth-child(3) {
+    width: 50%;
+    float: right;
+  }
+
+  .menu-item:nth-child(2) {
+    width: 50%;
+    float: left;
+  }
+
+  .menu-item:nth-child(3) {
+    width: 50%;
+    float: right;
+  }
+
+  .location {
+    position: relative;
+  }
+
+  .contact {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  .link-card:nth-child(2) {
+    width: 33.3333%;
+    float: left;
+  }
+
+  .link-card:nth-child(3) {
+    width: 33.3333%;
+    float: left;
+  }
+
+  .link-card:nth-child(4) {
+    width: 33.3333%;
+    float: left;
+  }
+
+  .menu-item:nth-child(2) {
+    width: 33.3333%;
+    float: left;
+  }
+
+  .menu-item:nth-child(3) {
+    width: 33.3333%;
+    float: left;
+  }
+
+  .menu-item:nth-child(4) {
+    width: 33.3333%;
+    float: left;
+  }
+
+  .location {
+    position: relative;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+    line-height: 1.5;
+    }
+
 }
