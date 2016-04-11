@@ -23,7 +23,7 @@ body {
 }
 
 .masthead {
-  height: 3rem;
+  height: 63px;
   display: block;
   background-color: #333;
   padding: .5rem;
@@ -39,16 +39,21 @@ li a {
   display: block;
   text-decoration: none;
   color: #f2f2f2;
-  text-align: center;
+  text-align: right;
   background-color: #333;
+  padding: 1rem;
 }
 
 h1 {
   position: absolute;
-  top: 0;
-  left: 2rem;
+  top: 10px;
+  left: 42px;
   z-index: 1000;
   margin: 0;
+}
+
+h1 img {
+  width: 4rem;
 }
 
 .content a {
@@ -72,6 +77,9 @@ ul {
 
 .nav-check:checked ~ .nav {
   display: block;
+  position: absolute;
+  z-index: 999;
+  width: 100%;
 }
 
 .nav-label {
@@ -79,8 +87,8 @@ ul {
   width: 40px;
   display: inline-block;
   position: absolute;
-  top: 3px;
-  right: 3px;
+  top: 11px;
+  right: 11px;
 }
 
 .nav-label img {
@@ -92,10 +100,11 @@ ul {
   position: relative;
   overflow: hidden;
   height: 441px;
-  background-image: url("../images/placeholder-16by9.svg");
+  background-image: url("../images/banner.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  opacity: 0.75;
 }
 
 .banner .img-flex {
@@ -103,21 +112,22 @@ ul {
   width: 100%;
 }
 
-.content {
+.banner .content {
   position: absolute;
-  width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -66%);
-  max-width: 45em;
-  padding: 20px 20px 0 20px;
+  padding: 42px;
   display: block;
   margin: auto;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .banner h2, p {
   text-align: center;
+  color: #f2f2f2;
+  margin: 0 0 42px 0;
 }
 
 .link-card .img-flex {
@@ -135,7 +145,7 @@ ul {
   text-align: center;
 }
 
-.content {
+.link-card .content {
   position: absolute;
   width: 100%;
   top: 50%;
@@ -269,6 +279,8 @@ small {
   .banner {
     height: 651px;
   }
+
+  .
 
 }
 
