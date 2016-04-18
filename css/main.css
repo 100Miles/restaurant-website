@@ -219,13 +219,21 @@ ul {
 
 .location {
   clear: both;
+  background-color: #666;
+}
+
+.location h2 {
   padding-top: 42px;
 }
 
 .contact {
-  padding: 0 42px 0 42px;
-  margin-top: 42px;
+  padding: 42px;
   text-align: left;
+}
+
+.contact h3 {
+  margin: 0;
+  padding-bottom: 42px;
 }
 
 .map {
@@ -410,6 +418,7 @@ small {
     top: 0;
     width: 33.3333%;
     height: 100%;
+    clear: both;
   }
 
   .masthead {
