@@ -42,6 +42,11 @@ li a {
   text-align: right;
   background-color: #333;
   padding: 1.3rem;
+
+  transition-duration: 500ms;
+  transition-property: color;
+  transition-property: background-color;
+  transition-timing-function: linear;
 }
 
 h1 {
@@ -109,6 +114,13 @@ ul {
 .nav-label img {
   display: block;
   width: 100%;
+}
+
+
+
+.nav a:hover {
+  color: #333;
+  background-color: #f2f2f2;
 }
 
 .banner {
