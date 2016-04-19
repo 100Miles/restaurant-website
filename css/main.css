@@ -42,6 +42,7 @@ li a {
   text-align: right;
   background-color: #333;
   padding: 1.3rem;
+  height: 63px;
 
   transition-duration: 500ms;
   transition-property: color;
@@ -131,6 +132,7 @@ ul {
   background-position: center;
   opacity: 0.75;
   background-color: #333;
+  clear: both;
 }
 
 .banner .img-flex {
@@ -192,6 +194,7 @@ ul {
 .link-card h2 {
   text-align: center;
   color: #333;
+  padding: 0;
 }
 
 .link-card .content {
@@ -233,7 +236,7 @@ ul {
 
 .contact h3 {
   margin: 0;
-  padding-bottom: 42px;
+  padding-bottom: 21px;
 }
 
 .map {
@@ -253,6 +256,7 @@ ul {
   display: block;
   margin: auto;
   max-width: 12em;
+  margin-bottom: 21px;
 }
 
 footer {
@@ -308,11 +312,14 @@ small {
 
   .contact {
     position: absolute;
-    bottom: 0;
+    right: 0;
+    top: 0;
+    width: 33.3333%;
+    height: 100%;
     background-color: #333;
-    width: 100%;
     color: #f2f2f2;
     opacity: .25;
+    clear: both;
 
     transition-property: color, opacity;
     transition-duration: 500ms;
@@ -334,11 +341,12 @@ small {
     height: 100%;
     top: 0;
     right: 0;
+    width: 75%;
   }
 
   .nav a {
-    width: 7rem;
     height: 100%;
+    margin: 0;
     text-align: center;
     border-left: solid 1px #f2f2f2;
 
@@ -355,6 +363,11 @@ small {
 
   .nav li {
     display: inline-block;
+    height: 74px;
+    margin: 0;
+    padding: 0;
+    float: right;
+    width: 7rem;
   }
 
   .nav-check:checked ~ .nav {
@@ -408,25 +421,16 @@ small {
     float: left;
   }
 
-  .location {
-    position: relative;
-  }
-
-  .contact {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 33.3333%;
-    height: 100%;
-    clear: both;
-  }
-
   .masthead {
     height: 86px;
   }
 
   .banner {
     height: 605px;
+  }
+
+  .nav li {
+    height: 86px;
   }
 
 }
