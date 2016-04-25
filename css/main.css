@@ -144,6 +144,7 @@ ul {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   padding: 42px;
   display: block;
@@ -157,6 +158,7 @@ ul {
   text-align: center;
   color: #f2f2f2;
   margin: 0 0 42px 0;
+  padding: 0;
 }
 
 .link-card p, .menu-item p, .nutrition p {
@@ -202,6 +204,7 @@ ul {
   width: 100%;
   top: 70%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   max-width: 45em;
   padding: 20px 20px 0 20px;
