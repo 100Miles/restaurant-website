@@ -131,7 +131,6 @@ ul {
   background-size: cover;
   background-position: center;
   opacity: 0.75;
-  background-color: #333;
   clear: both;
 }
 
@@ -161,7 +160,7 @@ ul {
   padding: 0;
 }
 
-.link-card p, .menu-item p, .nutrition p {
+.menu-item p, .nutrition p {
   text-align: center;
   color: #333;
   margin: 0 0 42px 0;
@@ -176,17 +175,7 @@ ul {
   position: relative;
   overflow: hidden;
   width: 100%;
-  background-color: #333;
-  color: #f2f2f2;
-
-  transition-duration: 500ms;
-  transition-property: opacity;
-  transition-timing-function: linear;
-}
-
-.link-card:hover {
-  opacity: 0.1;
-  color: #f2f2f2;
+  color: #333;
 }
 
 .link-card a:visited {
@@ -195,21 +184,30 @@ ul {
 
 .link-card h2 {
   text-align: center;
-  color: #333;
   padding: 0;
 }
 
 .link-card .content {
   position: absolute;
+  top: 0;
   width: 100%;
-  top: 70%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  max-width: 45em;
-  padding: 20px 20px 0 20px;
+  height: 100%;
+  padding: 10% 0 10% 0;
   display: block;
   margin: auto;
+  vertical-align: middle;
+  text-align: center;
+  color: #333;
+  background-color: rgba(0, 0, 0, 0.0);
+
+  transition-duration: 500ms;
+  transition-property: color, background-color;
+  transition-timing-function: linear;
+}
+
+.link-card .content:hover {
+  color: #f2f2f2;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .menu {
